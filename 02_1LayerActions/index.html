@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Layer Actions - HAS Paint Layers Wiki</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Layer Actions";
+        var mkdocs_page_input_path = "02_1LayerActions.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> HAS Paint Layers Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">HAS Paint Layers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01FirstSteps/">First Steps</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../02_0Layers/">Layers</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Layer Actions</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../03Filters/">Filters</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../04Customization/">Customization</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../05Baking/">Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../06File/">File</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../07Material/">Material</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../08Issues/">Known Issues</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../09FAQ/">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">HAS Paint Layers Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Layer Actions</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div><h1 id="layer-actions">Layer Actions</h1>
+<div class="image-box">
+  <img src="/source/images/layeraction.png" alt="layer action image">
+  <div class="text-box">
+    Layer Actions Layout
+  </div>
+</div>
+<div class="nice-text-box">
+  <h3>Layer Actions</h3>
+  <ul>
+    <li><strong>Add Filter</strong>: Apply a filter to modify the appearance of the layer.</li>
+    <li><strong>Add Paint Layer</strong>: Add a paint layer to the current layer as a filter.</li>
+    <li><strong>Add Fill Layer</strong>: Add fill layer to current layer as filter.</li>
+    <li><strong>Add Mask</strong>: Add mask to current layer.</li>
+    <li><strong>Remove Mask</strong>: Remove mask from current layer.</li>
+    <li><strong>Lock</strong>: Lock layer, blocking any direct changes to it.</li>
+    <li><strong>Combine with Layer Below</strong>: Merge the current layer with the one directly beneath it.</li>
+    <li><strong>Resize Layer</strong>: Change the size of the layer texture.</li>
+    <li><strong>Collapse Layer</strong>: Apply all filters and masks</li>
+    <li><strong>Color Tag</strong>: Assign a color tag to the layer.</li>
+    <li><strong>Duplicate Layer</strong>: Create a copy of the current layer.</li>
+    <li><strong>Isolate Current Layer Image</strong>: Isolate the layer's image for focused editing.</li>
+    <li><strong>Remove Layer</strong>: Delete the current layer from the stack.</li>
+    <li><strong>Layer Resource</strong>: See <strong>Layer Resource</strong> Below</li>
+  </ul>
+</div>
+
+<div class="nice-text-box">
+  <h3>Layer Resource</h3>
+  <p>
+    In Layer Actions panel you can define which texture used in current layer, open new image, create new image based on current settings, change mapping, or remove image to use fill color instead.
+  </p>
+</div>
+<div class="image-box">
+  <img src="/source/images/exampleimageactions.png" alt="example image">
+  <div class="text-box">
+    Example of image assigned to layer
+  </div>
+</div>
+<div class="image-box">
+  <img src="/source/images/examplecoloractions.png" alt="example color">
+  <div class="text-box">
+    Example of empty layer with color property
+  </div>
+</div>
+
+<hr></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../02_0Layers/" class="btn btn-neutral float-left" title="Layers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../03Filters/" class="btn btn-neutral float-right" title="Filters">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../02_0Layers/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../03Filters/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

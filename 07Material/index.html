@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Material - HAS Paint Layers Wiki</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Material";
+        var mkdocs_page_input_path = "07Material.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> HAS Paint Layers Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">HAS Paint Layers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01FirstSteps/">First Steps</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../02_0Layers/">Layers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../02_1LayerActions/">Layer Actions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../03Filters/">Filters</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../04Customization/">Customization</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../05Baking/">Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../06File/">File</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Material</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#options">Options</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preview-mode">Preview Mode</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#material-actions">Material Actions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#material-options">Material Options</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../08Issues/">Known Issues</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../09FAQ/">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">HAS Paint Layers Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Material</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div><h1 id="material">Material</h1>
+<p>There are three available shader presets that you can use:</p>
+<ol>
+<li>
+<p><strong>Principled BSDF</strong>: This is the default <strong>Physically Based Rendering (PBR)</strong> material.</p>
+</li>
+<li>
+<p><strong>Unlit</strong>: This preset only uses <strong>Diffuse</strong> and <strong>Alpha</strong> channels, which is ideal for hand-painted textures or stylized art that doesn’t require lighting interactions.</p>
+</li>
+<li>
+<p><strong>Custom</strong>: This preset doesn't alter the current material settings, allowing you to fully customize your shader. This is useful if you have a custom node setup that you would like to use instead of the pre-defined options.</p>
+</li>
+</ol>
+<h2 id="options">Options</h2>
+<p>Each material assigned or created with <strong>HAS Paint</strong> is stored within the add-on. Each material is assigned a unique name known as a "set," which allows for easier management and identification of different materials used in your project.</p>
+<h2 id="preview-mode">Preview Mode</h2>
+<p><strong>Preview Mode</strong> allows you to preview each type of image used in the material, such as <strong>Diffuse</strong>, <strong>Roughness</strong>, and others. This makes it easier to verify how each map is affecting the final material appearance, and to identify any adjustments that need to be made.</p>
+<h2 id="material-actions">Material Actions</h2>
+<p>This menu can be found on top of layers list</p>
+<ul>
+<li><strong>Combine All Layers</strong>: Merge all layers in the material to one layer.</li>
+<li><strong>Resize All Layers</strong>: Change the resolution of all layers within the material.</li>
+<li><strong>Setup Scene</strong>: Configure the scene settings.</li>
+<li><strong>Delete All Layers</strong>: Remove all layers from the current material.</li>
+</ul>
+<h2 id="material-options">Material Options</h2>
+<div class="nice-text-box">
+  <h3></h3>
+  <ul>
+    <li><strong>Shader</strong>: 
+    <ul>
+      <li><strong>Principled BSDF</strong>: A physically-based shader suitable for realistic materials.</li>
+      <li><strong>Unlit</strong>: Uses only diffuse and alpha, ideal for hand-painted or stylized looks where lighting is not needed.</li>
+      <li><strong>Custom</strong>: A custom shader that can be adapted to fit specific needs.</li>
+    </ul>
+    </li>
+    <li><strong>Maps Setup</strong>: Each material can have a unique set of maps assigned.</li>
+    <li><strong>Texture Filtering</strong>: Control the type of texture filtering.</li>
+    <li><strong>UV Channel</strong>: Specify the UV channel that will be used for all textures in the material. Empty by default will use default UVs</li>
+    <li><strong>Height Intensity</strong>: Adjust the height intensity to affect the entire material.</li>
+    <li><strong>Transparency Mode</strong>: Choose how the material handles transparency:</li>
+    <li><strong>Alpha Setting</strong>: Choose whether to use the Diffuse Alpha as the material's opacity.
+      <ul>
+        <li><strong>Opaque</strong>: No transparency, the material is fully solid.</li>
+        <li><strong>Hashed</strong>: Uses a dithered approach to simulate transparency.</li>
+        <li><strong>Blending</strong>: Uses smooth blending for transparency.</li>
+        <li><strong>Clip</strong>: Sharp, transparency based on an alpha threshold.</li>
+      </ul>
+    </li>
+    <li><strong>Texture Size</strong>: Define the default texture resolution for the material. It does not affect already create textures</li>
+    <li><strong>Default Material Values</strong>: Define base values for current material</li>
+  </ul>
+</div>
+
+<hr></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../06File/" class="btn btn-neutral float-left" title="File"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../08Issues/" class="btn btn-neutral float-right" title="Known Issues">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../06File/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../08Issues/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

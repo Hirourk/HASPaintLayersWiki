@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>File - HAS Paint Layers Wiki</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "File";
+        var mkdocs_page_input_path = "06File.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> HAS Paint Layers Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">HAS Paint Layers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01FirstSteps/">First Steps</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../02_0Layers/">Layers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../02_1LayerActions/">Layer Actions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../03Filters/">Filters</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../04Customization/">Customization</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../05Baking/">Tools</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">File</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#saving">Saving</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#export-textures">Export Textures</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#naming-conventions">Naming Conventions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#export-ora">Export ORA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#import-ora">Import ORA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cleanup-has-data">Cleanup HAS Data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#set-collection">Set Collection</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../07Material/">Material</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../08Issues/">Known Issues</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../09FAQ/">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">HAS Paint Layers Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">File</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div><h1 id="file">File</h1>
+<h2 id="saving">Saving</h2>
+<p><strong>Auto Save Toggle Button</strong>: <strong>HAS Paint</strong> allows you to save textures automatically whenever the scene is saved. This feature helps prevent loss of textures if Blender shuts down unexpectedly.</p>
+<h2 id="export-textures">Export Textures</h2>
+<p><strong>HAS Paint</strong> allows you to export created textures as individual images or as an <strong>ORA</strong> (Open Raster Archive) file. ORA is an open-source layer file format compatible with programs like <strong>Krita</strong> and other open-source graphic editors.</p>
+<div class="image-box">
+  <img src="/source/images/exportoptions.png" alt="Export options and template example">
+  <div class="text-box">
+    Export options and template example
+  </div>
+</div>
+
+<p>Each map can be packed using different channels. For example you can create RMO(Rougness, Metallic, Occlusion) using R+G+B+A.
+To export your textures, follow these steps:</p>
+<ol>
+<li>Navigate to the <strong>File</strong> menu on top of the addon.</li>
+<li>Click on the <strong>Export Textures</strong> button, which will open the path selection window.</li>
+<li>Choose a name for your export.</li>
+<li>Use presets or create new, for different channels as needed.</li>
+<li>Save presets for easy reuse in future projects.</li>
+</ol>
+<h3 id="naming-conventions">Naming Conventions</h3>
+<p>You can use specific properties in the naming to ensure consistency:</p>
+<ul>
+<li>Allowed properties: <code>(obj)</code>, <code>(mtl)</code>, <code>(file)</code>, <code>(set)</code></li>
+<li>Example: <code>(obj)_Diffuse</code> will be saved as <code>YourObject_Diffuse</code>.</li>
+<li>Example 2: <code>(obj)_(mtl)_(file)_(set)_D</code> will be saved as <code>Cube_Material_Untitled_Set01_D</code>.</li>
+</ul>
+<p>This flexibility helps you maintain a clean and consistent file structure, especially in projects with multiple objects and textures.</p>
+<h2 id="export-ora">Export ORA</h2>
+<p>When exporting as an <strong>ORA</strong> file, be aware of certain limitations:
+- All <strong>layer filters, masks, and other data</strong> will be collapsed into a single image.
+- Images will be exported while maintaining <strong>blending modes</strong> and <strong>opacity</strong>. However, <strong>Passthrough</strong> and <strong>Normal</strong> blend modes will be converted to <strong>Mix Blending</strong>.</p>
+<p>While there are limitations, the ORA export is still very useful for taking layered textures into external programs like <strong>Krita</strong> for further editing.</p>
+<h2 id="import-ora">Import ORA</h2>
+<p>If you have saved an ORA file, you can import it into <strong>HAS Paint</strong> as layers. This feature makes it easy to move your projects between HAS Paint and other software without losing the basic structure of your layers.</p>
+<h2 id="cleanup-has-data">Cleanup HAS Data</h2>
+<p><strong>Clear Unused HAS Data</strong> will clear only unused textures, node groups, and internal data created by HAS Paint Layers</p>
+<p><strong>Remove All HAS Data</strong> will remove all data created by this addon.</p>
+<p>Note! This affects only data blocks (textures, node groups) that start with ".HAS_", "HASM" or "HAS"</p>
+<h2 id="set-collection">Set Collection</h2>
+<p><strong>HAS Paint</strong> stores all materials in sets, allowing you to unassign materials from <strong>HAS</strong> and rename sets for better management.</p>
+<hr></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../05Baking/" class="btn btn-neutral float-left" title="Tools"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../07Material/" class="btn btn-neutral float-right" title="Material">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../05Baking/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../07Material/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

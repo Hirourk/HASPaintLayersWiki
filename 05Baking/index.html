@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Tools - HAS Paint Layers Wiki</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Tools";
+        var mkdocs_page_input_path = "05Baking.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> HAS Paint Layers Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">HAS Paint Layers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01FirstSteps/">First Steps</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../02_0Layers/">Layers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../02_1LayerActions/">Layer Actions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../03Filters/">Filters</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../04Customization/">Customization</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Tools</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#bake">Bake</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quick-edit">Quick Edit</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mask-tools">Mask Tools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#paint-tools">Paint Tools</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../06File/">File</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../07Material/">Material</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../08Issues/">Known Issues</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../09FAQ/">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">HAS Paint Layers Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Tools</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div><h1 id="tools">Tools</h1>
+<h2 id="bake">Bake</h2>
+<p><div class="video-container"><video style="width:720px;height:720px" muted controls alt="type:video"><source src="../source/videos/baking.mp4" type="video/mp4"></source></video></div></p>
+<p><strong>Baking</strong> is one of the features of <strong>HAS Paint</strong>. You can easily bake various maps by following these steps:</p>
+<ol>
+<li>Optionally select <strong>High</strong> objects.</li>
+<li>Optionally select <strong>Low</strong> objects. Or currently selected object will be used automatically</li>
+<li>Choose to use Cage if needed. An automatic cage will be created for you.</li>
+<li>Choose which maps to bake from the list below:</li>
+</ol>
+<div class="nice-text-box">
+  <h3>Ambient Occlusion</h3>
+  <p>
+    The Ambient Occlusion map uses a shader setup that is assigned to source object, you can control the AO distance in settings for this map. This method provides a fast and noise-free AO map.
+  </p>
+</div>
+<div class="nice-text-box">
+  <h3>Curvature</h3>
+  <p>
+    To bake Curvature, the add-on uses a shader and geometry nodes setup that applies directly to the source object. In settings for this map you can use Subdivision slider, to find what is best for you. Be causios with high subdivision as it can crash or take a long time to process.
+  </p>
+</div>
+<div class="nice-text-box">
+  <h3>Object Normal</h3>
+  <p>
+    The Object Normal map uses a shader setup that is assigned to source object. Creates normalized World/Object Normal Map.
+  </p>
+</div>
+<div class="nice-text-box">
+  <h3>Object Position</h3>
+  <p>
+    The Object Position map uses a shader setup that is assigned to source object. Creates normalized Object Position map.
+  </p>
+</div>
+<div class="nice-text-box">
+  <h3>Height</h3>
+  <p>
+    The Height map utilizes a geometry group assigned to source object to calculate the height difference between the high-poly and low-poly meshes. This allows you to bake height data without needing to use tessellation, keeping performance efficient. Requires Source(High) Object
+  </p>
+</div>
+<div class="nice-text-box">
+  <h3>Diffuse</h3>
+  <p>
+    The Diffuse map is captured from source object material. Requires Source(High) Object
+  </p>
+</div>
+<div class="nice-text-box">
+  <h3>Emission</h3>
+  <p>
+    The Emission map is captured from source object material. Requires Source(High) Object
+  </p>
+</div>
+
+<h2 id="quick-edit">Quick Edit</h2>
+<p><div class="video-container"><video style="width:720px;height:720px" muted controls alt="type:video"><source src="../source/videos/screentool.mp4" type="video/mp4"></source></video></div></p>
+<p>The <strong>Quick Edit</strong> tool is an enhanced version of the default Blender Quick Edit feature. It allows you to create a quick screenshot of the current view to be edited in an external editor, and then reproject the edited image back onto the model from the saved view.</p>
+<ul>
+<li>Control the <strong>screenshot size</strong> for better quality.</li>
+<li><strong>Save multiple views</strong> to edit and return to them later.</li>
+<li>Reproject saved projections efficiently, making texture corrections easier.</li>
+</ul>
+<h2 id="mask-tools">Mask Tools</h2>
+<p><div class="video-container"><video style="width:720px;height:720px" muted controls alt="type:video"><source src="../source/videos/masktool.mp4" type="video/mp4"></source></video></div></p>
+<p><strong>Mask Tools</strong> allow you to select polygons based on their distance from the camera. This is particularly useful for complex models where you want to focus your painting on specific areas without affecting other parts of the mesh.</p>
+<h2 id="paint-tools">Paint Tools</h2>
+<p><div class="video-container"><video style="width:720px;height:720px" muted controls alt="type:video"><source src="../source/videos/paintby.mp4" type="video/mp4"></source></video></div></p>
+<p><strong>HAS Paint</strong> offers several methods for quickly painting on your model:</p>
+<ul>
+<li><strong>Face</strong>: Draw By Faces.</li>
+<li><strong>UV</strong>: Draw By Connected UVs</li>
+<li><strong>Part</strong>: Draw By Connected Parts</li>
+</ul>
+<hr></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../04Customization/" class="btn btn-neutral float-left" title="Customization"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../06File/" class="btn btn-neutral float-right" title="File">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../04Customization/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../06File/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
